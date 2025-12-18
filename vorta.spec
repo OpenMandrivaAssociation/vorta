@@ -1,5 +1,5 @@
 Name:           vorta
-Version:        0.10.3
+Version:        0.11.1
 Release:        1
 Summary:        A GUI for Borg Backup
 License:        GPL-3.0-only AND BSD-2-Clause AND OFL-1.1
@@ -8,11 +8,18 @@ License:        GPL-3.0-only AND BSD-2-Clause AND OFL-1.1
 URL:            https://vorta.borgbase.com/
 Source0:        https://github.com/borgbase/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  python-build
-BuildRequires:  python-installer
-BuildRequires:  lib64python-devel
-BuildRequires:  desktop-file-utils
+BuildSystem:	python
+BuildArch:      noarch
 
+BuildRequires:	pkgconfig
+BuildRequires:	pkgconfig(python)
+BuildRequires:  python%{pyver}dist(build)
+BuildRequires:  python%{pyver}dist(installer)
+BuildRequires:  python%{pyver}dist(pip)
+BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(wheel)
+
+BuildRequires:  desktop-file-utils
 Requires:       borgbackup
 Requires:       hicolor-icon-theme
 Requires:       python-packaging
@@ -23,10 +30,7 @@ Requires:       python-qt6
 Requires:       python-qt6-devel
 Requires:       python-secretstorage
 Requires:       python-setuptools
-Requires:       lib64Qt6Svg
-
-
-BuildArch:      noarch
+Requires:       %{_lib}Qt6Svg
 
 %description
 Vorta is a backup client for macOS and Linux desktops.

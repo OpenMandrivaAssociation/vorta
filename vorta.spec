@@ -1,8 +1,8 @@
 Name:		vorta
-Version:	0.11.3
+Version:	0.11.4
 Release:	1
 Summary:	A GUI for Borg Backup
-License:	GPL-3.0-only AND BSD-2-Clause AND OFL-1.1
+License:	GPL-3.0-only
 Group:		Archiving/Backup
 # src/vorta/qt_single_application.py if BSD-2-Clause
 # src/vorta/assets/icons are OFL-1.1

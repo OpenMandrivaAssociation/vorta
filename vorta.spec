@@ -1,5 +1,5 @@
 Name:		vorta
-Version:	0.11.4
+Version:	0.11.5
 Release:	1
 Summary:	A GUI for Borg Backup
 License:	GPL-3.0-only

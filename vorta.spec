@@ -1,5 +1,5 @@
 Name:		vorta
-Version:	0.11.5
+Version:	0.11.6
 Release:	1
 Summary:	A GUI for Borg Backup
 License:	GPL-3.0-only
@@ -13,7 +13,7 @@ BuildArch:	noarch
 
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(build)
 BuildRequires:	python%{pyver}dist(installer)
 BuildRequires:	python%{pyver}dist(pip)
